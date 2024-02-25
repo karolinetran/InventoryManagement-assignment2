@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pharma Inventory Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+	<div class="header">
+		<h1>Pharma Inventory Management System</h1>
+	</div>
+	<div class="main-content-container">
+		<div class="input-container">
+			<h3>Add new product to inventory</h3>
+			<form class="input-form">
+				<input id="product-name" type="text" placeholder="Product name" required/>
+				<input id="product-id" type="text" placeholder="Product ID" required/>
+				<input id="product-manufacturer" type="text" placeholder="Manufacturer" required/>
+				<input id="product-date"type="date" placeholder="Expiration date" required/>
+				<input id="product-quantity" type="number" placeholder="Quantity" required/>
+			</form>
+			<button id="submitBtn" class="submit-btn">Submit</button>
+		</div>
+		<div class="display-container">
+			<h3>Inventory</h3>
+			<div id="inventory-container" class="inventory-container">
+
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+  </body>
+</html>
