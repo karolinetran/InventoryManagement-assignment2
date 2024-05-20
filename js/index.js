@@ -34,7 +34,7 @@ function displayInventory (inventoryLocalstorage) {
 			<div class="product-container">
 				<div class="product-header">
 					<h3>${product.name}</h3>
-					<button onclick="deleteProduct(${product.id})">Delete</button>
+					<button onclick="deleteProduct('${product.id}')">Delete</button>
 				</div>
 				<p>ID: ${product.id}</p>
 				<p>Manufacturer: ${product.manufacturer}</p>
@@ -85,8 +85,8 @@ function generateObjectToLocalstorage(product) {
 }
 
 function deleteProduct(productId) {
+    console.log("click delete")
     let products = JSON.parse(localStorage.getItem("pharmaInventory")) || [];
-
     const index = products.findIndex(p => {
 		console.log("Product ID:", p.id);
 		return p.id.toString() === productId.toString(); 
