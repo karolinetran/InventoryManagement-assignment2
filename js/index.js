@@ -1,6 +1,5 @@
 const InventoryContainer = document.getElementById("inventory-container");
-const errorLine = document.getElementById("error-line")
-
+const ErrorLine = document.getElementById("error-line");
 
 class Product {
     constructor(name, id, manufacturer, date, quantity) {
@@ -25,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
         displayInventory(inventoryLocalstorage);
     }
+
+    
 }
 
 function displayInventory (inventoryLocalstorage) {
@@ -49,6 +50,7 @@ function displayInventory (inventoryLocalstorage) {
 // New product 
 document.getElementById("submitBtn").addEventListener("click", addProduct);
 function addProduct() {
+    ErrorLine.innerHTML = ``;
 	// get new product details
     const name = document.getElementById("product-name").value;
     const id = document.getElementById("product-id").value;
@@ -63,7 +65,7 @@ function addProduct() {
 		generateObjectToLocalstorage(product);
 		displayInventoryFromLocalstorage();
     } else {
-        document.getElementById("error-line").innerHTML = "<p>Invalid form data</p>";
+        ErrorLine.innerHTML = `<p>Invalid form data</p>`;
     }
 }
 
