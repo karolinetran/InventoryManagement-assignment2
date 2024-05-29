@@ -9,6 +9,8 @@
 	flex-direction: row;
 }
 
+/* Input */
+
 .input-container{
 	margin:1em;
 	background:lightblue;
@@ -53,8 +55,9 @@
 
 #error-line p{
 	color:rgb(219, 37, 37);
-	
 }
+
+/* Display */ 
 
 .display-container{
 	background:lightgoldenrodyellow;
@@ -64,6 +67,7 @@
 	border: 1px solid white;
 	border-radius: 0.5em;
 }
+
 .product-container{
 	padding:0.5em;
 	background:rgb(223, 223, 177);

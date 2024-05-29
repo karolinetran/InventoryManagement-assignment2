@@ -12,9 +12,11 @@
 		<h1>Pharma Inventory Management System</h1>
 	</div>
 	<div class="main-content-container">
+		<!-- Input Container -->
 		<div class="input-container">
 			<h3>Add new product to inventory</h3>
 			<form class="input-form">
+				<!-- Input Fields for Product Details -->
 				<input id="product-name" type="text" placeholder="Product name" required/>
 				<input id="product-id" type="text" placeholder="Product ID" required/>
 				<input id="product-manufacturer" type="text" placeholder="Manufacturer" required/>
@@ -22,13 +24,14 @@
 				<input id="product-date"type="date" placeholder="Expiration date" required/>
 				<input id="product-quantity" type="number" placeholder="Quantity" required/>
 			</form>
+			<!-- Submit Button and Error Line -->
 			<button id="submitBtn" class="submit-btn">Submit</button>
 			<div id="error-line"></div>
 		</div>
+		<!-- Display Container for Inventory -->
 		<div class="display-container">
 			<h3>Inventory</h3>
 			<div id="inventory-container" class="inventory-container">
-
 			</div>
 		</div>
 	</div>
